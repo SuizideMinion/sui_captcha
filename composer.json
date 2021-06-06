@@ -1,0 +1,34 @@
+{
+  "name": "suizide/captcha",
+  "description": "A laravel simple captcha package",
+  "license": "1.0.0",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Suizide",
+      "email": "dieerben@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "Suizide\\Captcha\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Suizide\\Captcha\\CaptchaServiceProvider"
+      ]
+    }
+  },
+  "scripts": {
+    "phpunit": "phpunit"
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  }
+}
